@@ -42,17 +42,16 @@ main.appendChild(article)
 for(let i = 0; i < arrayPostagens.length; i++){
  // Criar um elemento
  let article = document.createElement("article")
- console.log(article)
-
+ 
  // Manipular um elemento
  article.innerHTML = `
- <h3>${arrayPostagens[1].titulo}</h3>
- <p class="subtitulo">${arrayPostagens[1].subtitulo}!</p>
- <div class="data">06/07/2022</div>
- <p>Restaurante em Consolação com comida por kilo no almoço e rodízio de pizzas à noite, tudo 100% vegano. Vale muito a pena conhecer :)</p>
+ <h3>${arrayPostagens[i].titulo}</h3>
+ <p class="subtitulo">${arrayPostagens[i].subtitulo}!</p>
+ <div class="data"${arrayPostagens[i].data}>06/07/2022</div>
+ <p>${arrayPostagens[i].texto}</p>
  </article>
  `
- article.id = "post-2"
+ article.id = `post-${i + 1}`
 
  // Adicionar o elemento na página
  let main = document.querySelector("main")
