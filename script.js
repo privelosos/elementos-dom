@@ -38,3 +38,23 @@ article.id = "post-2"
 // Adicionar o elemento na página
 let main = document.querySelector("main")
 main.appendChild(article)
+
+for(let i = 0; i < arrayPostagens.length; i++){
+ // Criar um elemento
+ let article = document.createElement("article")
+ console.log(article)
+
+ // Manipular um elemento
+ article.innerHTML = `
+ <h3>${arrayPostagens[1].titulo}</h3>
+ <p class="subtitulo">${arrayPostagens[1].subtitulo}!</p>
+ <div class="data">06/07/2022</div>
+ <p>Restaurante em Consolação com comida por kilo no almoço e rodízio de pizzas à noite, tudo 100% vegano. Vale muito a pena conhecer :)</p>
+ </article>
+ `
+ article.id = "post-2"
+
+ // Adicionar o elemento na página
+ let main = document.querySelector("main")
+ main.appendChild(article)
+}
