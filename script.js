@@ -18,3 +18,21 @@ const arrayPostagens = [
     texto: "Todos conhecemos e amamos um bom churrasco, mas o que você acha de experimentar um churrasco focado em frutos do mar? Nós gostamos, experimente e nos conte o que você achou!"
   },
 ]
+
+// Criar um elemento
+let article = document.createElement("article")
+console.log(article)
+
+// Manipular um elemento
+article.innerHTML = `
+console.log(article)
+<h3>Pop Vegan</h3>
+      <p class="subtitulo">Comida vegana para todos!</p>
+      <div class="data">06/07/2022</div>
+      <p>Restaurante em Consolação com comida por kilo no almoço e rodízio de pizzas à noite, tudo 100% vegano. Vale muito a pena conhecer :)</p>
+    </article>
+    `
+
+// Adicionar o elemento na página
+let main = document.querySelector("main")
+main.appendChild(article)
